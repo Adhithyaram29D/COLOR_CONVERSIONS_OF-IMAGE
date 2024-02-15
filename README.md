@@ -42,7 +42,7 @@ Split and merge HSV Image
 
 
 ### i) Read and display the image
-```
+```python
 import cv2
 import numpy as np
 img=cv2.imread("eiffeltower.jpg")
@@ -55,7 +55,7 @@ cv2.waitKey(0)
 <br>
 
 ### ii)Write the image
-```
+```python
 import cv2
 img=cv2.imread('eiffeltower.jpg')
 cv2.imwrite('paris.jpg',img)
@@ -66,7 +66,7 @@ cv2.imwrite('paris.jpg',img)
 <br>
 
 ### iii)Shape of the Image
-```
+```python
 import cv2
 img=cv2.imread('eiffeltower.jpg')
 print(img.shape)
@@ -77,7 +77,7 @@ print(img.shape)
 <br>
 
 ### iv)Access rows and columns
-```
+```python
 import cv2
 import random
 img=cv2.imread('eiffeltower.jpg')
@@ -96,7 +96,7 @@ cv2.destroyAllWindows()
 <br>
 
 ### v)Cut and paste portion of image
-```
+```python
 import cv2
 img=cv2.imread('eiffeltower.jpg')
 tag=img[150:200,110:160]
@@ -111,7 +111,7 @@ cv2.destroyAllWindows()
 <br>
 
 ### vi) BGR and RGB to HSV and GRAY
-```
+```python
 import cv2
 img = cv2.imread('eiffeltower.jpg',1)
 cv2.imshow('Paris2',img)
@@ -137,7 +137,7 @@ cv2.destroyAllWindows()
 <br>
 
 ### vii) HSV to RGB and BGR
-```
+```python
 import cv2
 img = cv2.imread('eiffeltower.jpg')
 
@@ -160,7 +160,7 @@ cv2.destroyAllWindows()
 <br>
 
 ### viii) RGB and BGR to YCrCb
-```
+```python
 import cv2
 img = cv2.imread('eiffeltower.jpg')
 cv2.imshow('Original RGB Image',img)
@@ -176,12 +176,11 @@ cv2.destroyAllWindows()
 ```
 ## Output:
 ![InShot_20240215_215452201](https://github.com/Adhithyaram29D/COLOR_CONVERSIONS_OF-IMAGE/assets/119393540/b7fa5490-b041-4e40-9bac-123c12c7953d)
-
 <br>
 <br>
 
 ### ix) Split and merge RGB Image
-```
+```python
 import cv2
 img = cv2.imread('eiffeltower.jpg')
 
@@ -201,12 +200,11 @@ cv2.destroyAllWindows()
 ```
 ## Output:
 ![InShot_20240215_215933473](https://github.com/Adhithyaram29D/COLOR_CONVERSIONS_OF-IMAGE/assets/119393540/8ae16d3f-8aaa-481e-8694-9441b343d9e9)
-
 <br>
 <br>
 
 ### x) Split and merge HSV Image
-```
+```python
 import cv2
 img = cv2.imread("eiffeltower.jpg")
 img = cv2.resize(img,(300,200))
@@ -226,12 +224,8 @@ cv2.destroyAllWindows()
 ```
 ## Output:
 ![InShot_20240215_220206626](https://github.com/Adhithyaram29D/COLOR_CONVERSIONS_OF-IMAGE/assets/119393540/8d19c1eb-7d8e-4380-8263-a3d2eec09b5e)
-
 <br>
 <br>
-
-
-
 
 ## Result:
 Thus the images are read, displayed, and written ,and color conversion was performed between RGB, HSV and YCbCr color models successfully using the python program.
